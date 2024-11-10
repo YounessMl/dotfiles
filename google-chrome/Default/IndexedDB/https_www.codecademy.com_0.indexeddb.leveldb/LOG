@@ -1,0 +1,6 @@
+2024/11/10-16:00:19.581 70e Creating DB /home/ylazzy/.config/google-chrome/Default/IndexedDB/https_www.codecademy.com_0.indexeddb.leveldb since it was missing.
+2024/11/10-16:00:19.590 70e Reusing MANIFEST /home/ylazzy/.config/google-chrome/Default/IndexedDB/https_www.codecademy.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/10-16:00:48.360 70f Level-0 table #5: started
+2024/11/10-16:00:48.363 70f Level-0 table #5: 3494 bytes OK
+2024/11/10-16:00:48.367 70f Delete type=0 #3
+2024/11/10-16:00:48.367 70f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

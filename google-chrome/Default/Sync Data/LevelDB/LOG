@@ -1,0 +1,9 @@
+2024/11/10-23:29:53.115 2a2 Reusing MANIFEST /home/ylazzy/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2024/11/10-23:29:53.118 2a2 Recovering log #43
+2024/11/10-23:29:53.120 2a2 Reusing old log /home/ylazzy/.config/google-chrome/Default/Sync Data/LevelDB/000043.log 
+2024/11/10-23:30:54.788 29f Level-0 table #47: started
+2024/11/10-23:30:54.795 29f Level-0 table #47: 149286 bytes OK
+2024/11/10-23:30:54.804 29f Delete type=0 #43
+2024/11/11-00:15:22.829 29f Level-0 table #49: started
+2024/11/11-00:15:22.837 29f Level-0 table #49: 100847 bytes OK
+2024/11/11-00:15:22.840 29f Delete type=0 #46

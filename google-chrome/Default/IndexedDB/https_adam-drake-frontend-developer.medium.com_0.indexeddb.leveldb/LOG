@@ -1,0 +1,6 @@
+2024/11/10-19:10:09.820 70e Creating DB /home/ylazzy/.config/google-chrome/Default/IndexedDB/https_adam-drake-frontend-developer.medium.com_0.indexeddb.leveldb since it was missing.
+2024/11/10-19:10:09.825 70e Reusing MANIFEST /home/ylazzy/.config/google-chrome/Default/IndexedDB/https_adam-drake-frontend-developer.medium.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/10-19:15:31.413 712 Level-0 table #5: started
+2024/11/10-19:15:31.417 712 Level-0 table #5: 48327 bytes OK
+2024/11/10-19:15:31.419 712 Delete type=0 #3
+2024/11/10-19:15:31.420 712 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

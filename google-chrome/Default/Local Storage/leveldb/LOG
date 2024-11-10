@@ -1,0 +1,24 @@
+2024/11/10-23:29:53.126 4 Reusing MANIFEST /home/ylazzy/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2024/11/10-23:29:53.133 4 Recovering log #86
+2024/11/10-23:29:53.134 4 Reusing old log /home/ylazzy/.config/google-chrome/Default/Local Storage/leveldb/000086.log 
+2024/11/10-23:30:21.318 5 Level-0 table #90: started
+2024/11/10-23:30:21.324 5 Level-0 table #90: 76658 bytes OK
+2024/11/10-23:30:21.328 5 Delete type=0 #86
+2024/11/11-00:03:55.215 4 Level-0 table #92: started
+2024/11/11-00:03:55.219 4 Level-0 table #92: 18589 bytes OK
+2024/11/11-00:03:55.223 4 Delete type=0 #89
+2024/11/11-00:06:58.216 4 Level-0 table #94: started
+2024/11/11-00:06:58.221 4 Level-0 table #94: 16616 bytes OK
+2024/11/11-00:06:58.227 4 Delete type=0 #91
+2024/11/11-00:06:58.228 4 Compacting 4@0 + 1@1 files
+2024/11/11-00:06:58.249 4 Generated table #95@0: 402 keys, 946646 bytes
+2024/11/11-00:06:58.249 4 Compacted 4@0 + 1@1 files => 946646 bytes
+2024/11/11-00:06:58.251 4 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/11-00:06:58.252 4 Delete type=2 #90
+2024/11/11-00:06:58.253 4 Delete type=2 #94
+2024/11/11-00:06:58.253 4 Delete type=2 #84
+2024/11/11-00:06:58.253 4 Delete type=2 #92
+2024/11/11-00:06:58.253 4 Delete type=2 #87
+2024/11/11-00:09:00.215 5 Level-0 table #97: started
+2024/11/11-00:09:00.220 5 Level-0 table #97: 37719 bytes OK
+2024/11/11-00:09:00.224 5 Delete type=0 #93
