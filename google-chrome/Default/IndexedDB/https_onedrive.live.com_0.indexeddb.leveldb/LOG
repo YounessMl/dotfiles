@@ -1,5 +1,0 @@
-2024/11/10-01:06:37.890 105b Creating DB /home/ylazzy/.config/google-chrome/Default/IndexedDB/https_onedrive.live.com_0.indexeddb.leveldb since it was missing.
-2024/11/10-01:06:37.896 105b Reusing MANIFEST /home/ylazzy/.config/google-chrome/Default/IndexedDB/https_onedrive.live.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/11/10-01:06:42.705 105c Level-0 table #5: started
-2024/11/10-01:06:42.726 105c Level-0 table #5: 1115714 bytes OK
-2024/11/10-01:06:42.728 105c Delete type=0 #3
