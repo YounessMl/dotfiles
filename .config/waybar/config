@@ -1,0 +1,103 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "spacing": 0,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    
+    "modules-left": ["custom/activities", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["bluetooth", "network", "backlight", "pulseaudio", "battery", "custom/power", "tray"],
+    
+    "custom/activities": {
+        "format": "Activities",
+        "on-click": "wofi --show drun",
+        "tooltip": false
+    },
+    
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "sort-by-number": true,
+        "all-outputs": true,
+        "disable-scroll": true,
+        "show-special": false
+    },
+    
+    "clock": {
+        "format": "{:%a %b %d %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+     
+    "bluetooth": {
+        "format": "{icon}",
+        "format-icons": {
+            "enabled": "󰂯",
+            "disabled": "󰂲"
+        },
+        "format-connected": "󰂱 {device_alias}",
+        "format-connected-battery": "󰂱 {device_alias} {device_battery_percentage}%",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "on-click": "blueberry"
+    },
+
+    
+    "network": {
+        "format-wifi": "{essid} {icon}",
+        "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+        "format-ethernet": "Wired 󰈀",
+        "format-disconnected": "Disconnected 󰤮",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+        "interval": 1
+    },
+    
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"],
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-",
+        "min-length": 7
+    },
+    
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "Muted 󰝟",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾", "󰖁"],
+            "headphone": "󰋋",
+            "headset": "󰋎",
+            "phone": "󰏲",
+            "portable": "󰏱",
+            "car": "󰄋",
+            "default": ["󰕿", "󰖀", "󰕾", "󰖁"]
+        },
+        "on-click": "pavucontrol"
+    },
+    
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% 󰚥",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+    
+    "tray": {
+        "spacing": 10
+    }
+}

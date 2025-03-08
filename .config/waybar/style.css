@@ -1,0 +1,103 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Cantarell", "Ubuntu", sans-serif;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #000000;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar.empty {
+    background-color: transparent;
+}
+
+#workspaces button {
+    padding: 0 4px;
+    background: transparent;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.active {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#custom-activities {
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+#clock,
+#battery,
+#backlight,
+#pulseaudio,
+#network,
+#custom-power,
+bluetooth,
+#tray {
+    padding: 0 8px;
+    color: #ffffff;
+}
+
+#clock {
+    font-weight: normal;
+}
+
+#battery.warning {
+    color: #f9e2af;
+}
+
+#battery.critical {
+    color: #f38ba8;
+}
+
+#battery.charging {
+    color: #a6e3a1;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #f38ba8;
+}
+
+/* Make elements more like GNOME's hoverable buttons */
+#network,
+#backlight,
+#pulseaudio,
+#battery,
+#custom-power,
+#bluetooth {
+    border-radius: 4px;
+    margin: 4px 2px;
+}
+
+#network:hover,
+#backlight:hover,
+#pulseaudio:hover,
+#battery:hover,
+#custom-power:hover,
+#bluetooth:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#bluetooth.disabled {
+    color: #6c7086;
+}
