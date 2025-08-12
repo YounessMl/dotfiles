@@ -1,21 +1,27 @@
 # Swap Caps Lock and Left Control keys
 # This file should be placed in /etc/udev/hwdb.d/
 # After adding this file, run:
-# sudo systemd-hwdb update
-# sudo udevadm trigger
+#   sudo systemd-hwdb update
+#   sudo udevadm trigger
 
-# Match all keyboards
+# Internal PS/2 keyboard
+# (matches built-in laptop keyboards)
 evdev:atkbd:dmi:*
  KEYBOARD_KEY_3a=leftctrl   # Caps Lock -> Left Ctrl
  KEYBOARD_KEY_1d=capslock   # Left Ctrl -> Caps Lock
 
-# USB keyboards
+# USB keyboards (bus 0003)
 evdev:input:b0003v*p*
  KEYBOARD_KEY_70039=leftctrl   # Caps Lock -> Left Ctrl
  KEYBOARD_KEY_700e0=capslock   # Left Ctrl -> Caps Lock
 
-# Generic keyboard fallback
-evdev:input:b0011v*
+# Bluetooth keyboards (bus 0005)
+# Your MX Keys appears as bluetooth:046d:b35b, which matches this block.
+evdev:input:b0005v*p*
  KEYBOARD_KEY_70039=leftctrl   # Caps Lock -> Left Ctrl
  KEYBOARD_KEY_700e0=capslock   # Left Ctrl -> Caps Lock
 
+# Generic legacy/ISA fallback (bus 0011)
+evdev:input:b0011v*
+ KEYBOARD_KEY_70039=leftctrl   # Caps Lock -> Left Ctrl
+ KEYBOARD_KEY_700e0=capslock   # Left Ctrl -> Caps Lock
